@@ -27,9 +27,6 @@ html {
 .wrapper__main {
   margin: 0 auto;
   max-width: 1012px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .menu {
@@ -78,6 +75,10 @@ html {
 }
 .menu__account-btn--bgcYellow {
   background-color: #FFC700;
+}
+
+textarea {
+  resize: none;
 }
 
 .footer {
