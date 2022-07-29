@@ -6,10 +6,13 @@
     &__title
         display: flex
         align-items: flex-end
+        margin-bottom: 20px
     &__slogan
         font-weight: 800
         font-size: 4.8rem
         width: 250px
+    &__icon
+        padding-right: 20px
     &__text
         font-size: 1.6rem
         max-width: 580px
@@ -19,6 +22,8 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        +mq(large)
+            justify-content: space-evenly
         &-box
             display: flex
             flex-direction: column
@@ -28,9 +33,26 @@
             box-shadow: 8px 8px 0 $main-color
             padding: 45px 0
             margin-bottom: 20px
+            +mq(medium)
+                width: 180px
+                text-align: left
+                padding: 15px 0
+                margin: 0 5px 15px 0
         &-title
             font-weight: 800
             font-size: 3rem
+            +mq(medium)
+                font-size: 1.8rem
+                margin: 0 10px 0 10px
         &-text
             font-size: 1.6rem
-            padding: 10px 20px 0 20px
+            margin: 10px 10px 0 10px
+            &--desktop
+                +mq(medium)
+                    display: none
+            &--mobile
+                display: none
+                width: 160px
+                font-size: 1.5rem
+                +mq(medium)
+                    display: block
