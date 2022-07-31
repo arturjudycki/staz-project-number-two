@@ -23,6 +23,13 @@ html
         max-width: 1012px
         +mq(large)
             padding: 0 30px
+        &--column
+            +mq(xsmall)
+                display: flex
+                flex-direction: column
     &__hline
         margin: 90px 0
         border: 1px solid #000
+        &--order
+            +mq(xsmall)
+                order: 1

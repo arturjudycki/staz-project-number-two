@@ -1,9 +1,13 @@
 .quotation
+    +mq(xsmall)
+        order: 2
     &__title
         font-size: 4.8rem
         text-align: center
         max-width: 576px
         margin: 0 auto
+        +mq(xsmall)
+            font-size: 1.8rem
     &__text
         font-size: 1.6rem
         text-align: center
@@ -14,16 +18,28 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        +mq(large)
+            justify-content: space-evenly
     &__item
         display: flex
         align-items: center
-        min-width: 324px
+        width: 324px
+        background-color: #fff
         border: 4px solid #000
         margin-bottom: 20px
         box-shadow: 8px 8px 0 $main-color
+        +mq(large)
+            margin-right: 10px
+        +mq(xsmall)
+            width: 365px
+            margin-bottom: 0
+            border-top: none
+            &--borderTop
+                border-top: 4px solid #000
         &-number
-            width: 60px
+            min-width: 60px
             text-align: center
+            // padding: 0 20px
             line-height: 60px
             font-size: 2.5rem
             font-weight: 800
@@ -32,4 +48,4 @@
         &-text
             font-size: 1.5rem
             font-weight: 800
-            padding-left: 15px
+            padding: 0 15px

@@ -4,6 +4,8 @@
         font-size: 4.8rem
         text-align: center
         padding-bottom: 70px
+        +mq(xsmall)
+            font-size: 1.8rem
     &__interactive
         &-container
         &-bar
@@ -21,6 +23,13 @@
             margin-right: 6px
         &-contain
             display: flex
+            +mq(large)
+                flex-direction: column
+            &-choice
+                +mq(large)
+                    order: 1
+                    display: flex
+                    z-index: 0
         &-type
             width: 214px
             font-weight: 900
@@ -33,6 +42,13 @@
             box-shadow: 12px 12px 0 $main-color
             background-color: #fff
             cursor: pointer
+            +mq(xsmall)
+                font-size: 1.6rem
+            +mq(xxxsmall)
+                font-size: 1.4rem
+            &--borderRight
+                +mq(large)
+                    border-right: 4px solid #000
             &:hover
                 background-color: $main-color
             &--active
@@ -45,6 +61,11 @@
             background-color: #fff
             box-shadow: 12px 12px 0 $main-color
             padding: 60px 50px 60px 270px
+            overflow: hidden
+            +mq(medium)
+                padding: 40px 50px 130px 50px
+            +mq(xxsmall)
+                padding-bottom: 100px
         &-title
             font-weight: 800
             font-size: 2.8rem
@@ -61,12 +82,38 @@
             background-color: #000
             &--top
                 top: 0
+            &--horizontal
+                +mq(medium)
+                    background-color: transparent
+                    border-top: 4px solid #000
+                    left: 0
+                    top: 270px
+                    width: 80%
+                +mq(xsmall)
+                    top: 290px
+                    width: 75%
+                +mq(xxxsmall)
+                    top: 86%
+                    width: 70%
             &--bottom
                 bottom: 0
+                +mq(medium)
+                    display: none
         &-image
             position: absolute
             top: 97px
             left: 98px
+            +mq(medium)
+                top: 240px
+                left: 85%
+                width: 60px
+                height: 60px
+            +mq(xsmall)
+                top: 260px
+                left: 80%
+            +mq(xxxsmall)
+                top: 80%
+                left: 75%
     &__opinion
         text-align: center
         &-person
@@ -89,17 +136,26 @@
             border-bottom: none
             box-shadow: 12px 12px 0 $main-color
             margin-left: 40px
+            +mq(xsmall)
+                width: 277px
+                margin-left: 0
         &-procents
             border-right: 4px solid #000
             background-color: $main-color
             font-weight: 900
             font-size: 2.7rem
             padding: 22px 30px
+            +mq(xsmall)
+                font-size: 2rem
+                padding: 15px 10px
         &-title
             font-weight: 900
             font-size: 2.7rem
             color: $main-color
             padding: 22px 30px
+            +mq(xsmall)
+                font-size: 2rem
+                padding: 15px 10px
         &-text
             position: relative
             border: 4px solid #000
@@ -110,10 +166,23 @@
             &-item
                 display: flex
                 padding: 10px
+            &-icon
+                +mq(xsmall)
+                    width: 20px
+                    height: 20px
             &-text
                 font-weight: 800
                 font-size: 2.5rem
                 padding-left: 25px
+                +mq(xsmall)
+                font-size: 1.6rem
+                &--longVersion
+                    +mq(medium)
+                        display: none
+                &--shortVersion
+                    display: none
+                    +mq(medium)
+                        display: block
         &-subtitle
             position: absolute
             bottom: -45px
@@ -125,11 +194,23 @@
             background-color: $main-color
             border: 4px solid #000
             padding: 22px 0
+            +mq(xsmall)
+                width: 242px
+                font-size: 1.6rem
+                right: -4px
+                padding: 15px 0
         &-info-text
             max-width: 905px
             font-weight: 900
             font-size: 2.7rem
             text-align: center
             border: 4px solid #000
-            padding: 20px 0
-            margin: 56px 0 0 31px
+            padding: 20px 10px
+            margin-top: 56px
+            +mq(xsmall)
+                font-size: 1.6rem
+                max-width: 368px
+                margin: 56px auto 0 auto
+            &-disappear
+                +mq(xsmall)
+                    display: none
