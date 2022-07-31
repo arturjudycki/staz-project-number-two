@@ -18,6 +18,10 @@ html
         text-align: center
         font-weight: 900
         line-height: 64px
+        +mq(xsmall)
+            font-size: 1.6rem
+        +mq(xxxsmall)
+            font-size: 1.4rem
     &__main
         margin: 0 auto
         max-width: 1012px
@@ -30,6 +34,22 @@ html
     &__hline
         margin: 90px 0
         border: 1px solid #000
+        +mq(xsmall)
+            margin: 60px 0
         &--order
             +mq(xsmall)
                 order: 1
+    &__scroller-up
+        display: none
+        font-size: 3rem
+        width: 46px
+        text-align: center
+        margin: 80px auto 0 auto
+        background-color: $main-color
+        border: 4px solid #000
+        box-shadow: 4px 4px 0 $main-color
+        cursor: pointer
+        +mq(xsmall)
+            display: block
+        &--order
+            order: 2

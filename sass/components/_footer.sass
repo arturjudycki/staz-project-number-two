@@ -2,6 +2,12 @@
     background-color: $main-color
     height: 348px
     margin-top: 130px
+    +mq(large)
+        padding: 0 30px
+    +mq(xmediumx)
+        height: 465px
+    +mq(xsmall)
+        margin-top: 54px
     .menu
         &--order
             margin: 0 auto
@@ -9,9 +15,19 @@
             max-width: 1012px
             flex-wrap: wrap
             justify-content: space-between
+            +mq(xmediumx)
+                flex-direction: column
+                align-items: center
+                text-align: center
+                padding-bottom: 20px
         &__logo--order-2
             width: 500px
             order: -2
+            +mq(xmediumx)
+                max-width: 250px
+                order: 0
+                margin: 20px auto
+                flex-basis: auto
         &__nav-list--weight700
             font-weight: 700
         &__account
@@ -20,6 +36,10 @@
             justify-content: space-between
             margin-bottom: 20px
             order: -1
+            +mq(xmediumx)
+                max-width: 255px
+                order: 0
+                margin: 30px auto 0 auto
             &-btn
                 &--bgcBlack
                     background-color: #000
@@ -38,13 +58,28 @@
             display: flex
             justify-content: space-around
             padding: 10px 0
+            +mq(xmediumx)
+                max-width: 155px
+                background-color: $main-color
+                margin-top: 50px
             &-icon
                 font-size: 22px
                 color: $main-color
+                +mq(xmediumx)
+                    color: #000
                 &:hover
                     color: $hover-color
+                    +mq(xmediumx)
+                        color: #666
     &__text-info
         margin: 0 auto
         max-width: 1012px
         font-size: 1.6rem
         padding-left: 10px
+        +mq(xmediumx)
+            display: none
+        &--appear
+            display: none
+            +mq(xmediumx)
+                display: block
+                text-align: center
