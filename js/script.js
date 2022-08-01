@@ -1,19 +1,30 @@
-// const burger = document.querySelector(".menu__burger");
-// const xMark = document.querySelector(".menu__xmark");
-// const menu = document.querySelector(".navbar");
+const burger = document.querySelector(".menu__burger");
+const xMark = document.querySelector(".menu__xmark");
+const menu = document.querySelector(".menu__mobile");
 
-// burger.addEventListener("click", function () {
-//   burger.classList.toggle("header__burger--none");
-//   xMark.classList.toggle("header__xmark--display");
-//   menu.classList.toggle("navbar--none");
-// });
+function menuToggle() {
+  burger.classList.toggle("menu__burger--displayNone");
+  xMark.classList.toggle("menu__xmark--displayBlock");
+  menu.classList.toggle("menu__mobile--displayBlock");
+}
 
-// xMark.addEventListener("click", function () {
-//   burger.classList.toggle("header__burger--none");
-//   xMark.classList.toggle("header__xmark--display");
-//   menu.classList.toggle("navbar--none");
-// });
+burger.addEventListener("click", menuToggle);
 
+xMark.addEventListener("click", menuToggle);
+
+//jump to section from menu
+
+$(".menu__nav-list-item div").on("click", function () {
+  const goToSection = "#" + $(this).attr("class");
+  $("body, html").animate(
+    {
+      scrollTop: $(goToSection).offset().top,
+    },
+    500
+  );
+});
+
+//expand answer for question
 let questions = document.querySelectorAll(".faq__question");
 
 for (let i = 0; i < questions.length; i++) {
@@ -29,6 +40,7 @@ function popUp() {
   xmark.classList.toggle("faq__question-xmark--displayBlock");
 }
 
+//scroller
 $(".wrapper__scroller-up").on("click", function () {
   $("body, html").animate(
     {

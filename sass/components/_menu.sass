@@ -7,11 +7,28 @@
     align-items: center
     &__logo
         margin-right: auto
-    &__pop-up
+    &__burger
         display: none
         font-size: 3rem
         +mq(large)
-            display: flex
+            display: block
+        &--displayNone
+            display: none
+    &__xmark
+        display: none
+        font-size: 3rem
+        &--displayBlock
+            +mq(large)
+                display: block
+    &__mobile
+        display: flex
+        align-items: center
+        +mq(large)
+            display: none
+        &--displayBlock
+            +mq(large)
+                display: block
+                width: 100%
     &__nav-list
         list-style: none
         display: flex
@@ -36,9 +53,14 @@
                     box-shadow: 6px 6px 0 $main-color
                     padding: 10px 0
                     margin: 0 0 30px 0
+                    margin-right: 0
                     &:hover
                         background-color: $main-color
                         color: #000
+                    >div
+                        width:100%
+                        display: flex
+                        justify-content: center
     &__account
         width: 255px
         display: flex

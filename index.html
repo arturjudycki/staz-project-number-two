@@ -24,22 +24,35 @@
                         <img src="./img/logo.png" alt="logo" class="menu__logo-image">
                     </a>
                 </div>
-                <div class="menu__pop-up">
-                    <i class="fa-solid fa-grip-lines menu__burger"></i>
-                    <i class="fa-solid fa-xmark menu__xmark none"></i>
+                <div class="menu__burger">
+                    <i class="fa-solid fa-grip-lines menu__burger-icon"></i>
                 </div>
-                <ul class="menu__nav-list menu__nav-list--vertical">
-                    <li class="menu__nav-list-item menu__nav-list-item--vertical">About</li>
-                    <li class="menu__nav-list-item menu__nav-list-item--vertical">Pricing</li>
-                    <li class="menu__nav-list-item menu__nav-list-item--vertical">FAQ</li>
-                    <li class="menu__nav-list-item menu__nav-list-item--vertical">Contact</li>
-                </ul>
-                <hr class="wrapper__hline wrapper__hline-menu">
-                <div class="menu__account menu__account--vertical">
-                    <button class="menu__account-btn menu__account-btn--bgcYellow menu__account-btn--vertical">sign
-                        up</button>
-                    <button class="menu__account-btn menu__account-btn--vertical">login</button>
+                <div class="menu__xmark">
+                    <i class="fa-solid fa-xmark menu__xmark-icon"></i>
                 </div>
+                
+                <div class="menu__mobile">
+                    <ul class="menu__nav-list menu__nav-list--vertical">
+                        <li class="menu__nav-list-item menu__nav-list-item--vertical">
+                            <div class="about">About</div>
+                        </li>
+                        <li class="menu__nav-list-item menu__nav-list-item--vertical">
+                            <div class="pricing">Pricing</div>
+                        </li>
+                        <li class="menu__nav-list-item menu__nav-list-item--vertical">
+                            <div class="faq">FAQ</div>
+                        </li>
+                        <li class="menu__nav-list-item menu__nav-list-item--vertical">
+                            <div class="contact">Contact</div>
+                        </li>
+                        </ul>
+                        <hr class="wrapper__hline wrapper__hline-menu">
+                        <div class="menu__account menu__account--vertical">
+                            <button class="menu__account-btn menu__account-btn--bgcYellow menu__account-btn--vertical">sign
+                                up</button>
+                            <button class="menu__account-btn menu__account-btn--vertical">login</button>
+                        </div>
+                        </div>
             </div>
 
             <section class="section-main">
@@ -93,7 +106,7 @@
 
             <hr class="wrapper__hline">
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__title">
                     <h1 class="about__slogan">Hi, we’re Rightfully</h1>
                     <img src="./img/waving-hand.png" alt="waving hand" class="about__icon">
@@ -171,7 +184,7 @@
 
             <hr class="wrapper__hline">
 
-            <section class="pricing">
+            <section class="pricing" id="pricing">
                 <h1 class="pricing__title">Portal for your thoughts</h1>
 
                 <div class="pricing__interactive-container">
@@ -262,13 +275,17 @@
 
             <hr class="wrapper__hline">
 
-            <section class="faq">
+            <section class="faq" id="faq">
                 <h1 class="faq__title">Frequently Asked Questions</h1>
                 <div class="faq__box">
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -283,8 +300,12 @@
                     </div>
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -299,8 +320,12 @@
                     </div>
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -315,8 +340,12 @@
                     </div>
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -331,8 +360,12 @@
                     </div>
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -347,8 +380,12 @@
                     </div>
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -363,8 +400,12 @@
                     </div>
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -379,8 +420,12 @@
                     </div>
                     <div class="faq__question">
                         <p class="faq__question-text">Do you charge for cases I submitted myself?</p>
-                        <i class="fa-solid fa-plus faq__question-icon"></i>
-                        <i class="fa-solid fa-xmark faq__question-xmark"></i>
+                        <div class="faq__question-icon">
+                            <i class="fa-solid fa-plus faq__question-icon-img"></i>
+                        </div>
+                        <div class="faq__question-xmark">
+                            <i class="fa-solid fa-xmark faq__question-xmark-img"></i>
+                        </div>
                         <p class="faq__question-answer">
                             After signing up, you will be assigned to a case manager that will be filing claims on your
                             behalf. Afterward, our claim
@@ -401,7 +446,7 @@
 
             <hr class="wrapper__hline">
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h1 class="contact__title">Let us know how we can help you</h1>
                 <p class="contact__text">
                     Want to speak to one of our nice guys or wise guys?
@@ -431,10 +476,18 @@
                     </a>
                 </div>
                 <ul class="menu__nav-list menu__nav-list--weight700">
-                    <li class="menu__nav-list-item">About</li>
-                    <li class="menu__nav-list-item">Pricing</li>
-                    <li class="menu__nav-list-item">FAQ</li>
-                    <li class="menu__nav-list-item">Contact</li>
+                    <li class="menu__nav-list-item">
+                        <div class="about">About</div>
+                    </li>
+                    <li class="menu__nav-list-item">
+                        <div class="pricing">Pricing</div>
+                    </li>
+                    <li class="menu__nav-list-item">
+                        <div class="faq">FAQ</div>
+                    </li>
+                    <li class="menu__nav-list-item">
+                        <div class="contact">Contact</div>
+                    </li>
                 </ul>
                 <div class="menu__account">
                     <button class="menu__account-btn menu__account-btn--bgcBlack">sign up</button>
