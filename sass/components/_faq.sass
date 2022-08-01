@@ -12,18 +12,19 @@
         +mq(large)
             justify-content: center
     &__question
+        position: relative
         width: 496px
         background: $main-color
         border: 4px solid #000
         display: flex
         justify-content: space-around
         align-items: center
-        padding: 25px 0
-        margin-bottom: 18px
+        padding: 20px 0
+        margin-bottom: 16px
         cursor: pointer
         +mq(xsmall)
             width: 365px
-            padding: 15px 0
+            padding: 10px 0
         &:hover
             background-color: $hover-color
         &-text
@@ -34,7 +35,29 @@
                 width: 200px
         &-icon
             font-size: 3rem
-            cursor: pointer
+            &--displayNone
+                display: none
+        &-xmark
+            display: none
+            font-size: 3rem
+            &--displayBlock
+                display: block
+        &-answer
+            display: none
+            position: absolute
+            top: 74px
+            left: -4px
+            width: calc(100% + 8px)
+            font-size: 1.6rem
+            padding: 30px 25px
+            background-color: #fff
+            border: 4px solid black
+            border-top: none
+            z-index: 1
+            +mq(xsmall)
+                top: 64px
+            &--displayBlock
+                display: block
     &__info
         font-size: 1.8rem
         font-weight: 800
