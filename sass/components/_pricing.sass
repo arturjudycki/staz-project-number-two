@@ -42,6 +42,8 @@
             box-shadow: 12px 12px 0 $main-color
             background-color: #fff
             cursor: pointer
+            &--control
+                background-color: $main-color
             +mq(xsmall)
                 font-size: 1.6rem
             +mq(xxxsmall)
@@ -53,6 +55,8 @@
                 background-color: $main-color
             &--active
                 background-color: $main-color
+            &--bgcWhite
+                background-color: #fff
         &-box
             flex-grow: 1
             position: relative
@@ -71,9 +75,25 @@
             font-size: 2.8rem
             max-width: 258px
             padding-bottom: 15px
+            &--dimensions
+                display: none
+            &--inbound
+                display: none
+            &--displayBlock
+                display: block
+            &--displayNone
+                display: none
         &-text
             font-size: 1.6rem
             max-width: 475px
+            &--dimensions
+                display: none
+            &--inbound
+                display: none
+            &--displayBlock
+                display: block
+            &--displayNone
+                display: none
         &-line
             position: absolute
             left: 140px
@@ -106,10 +126,30 @@
             +mq(medium)
                 top: 240px
                 left: 85%
-                width: 60px
-                height: 60px
+            &--control
+                +mq(medium)
+                    width: 60px
+                    height: 60px
+            &--dimensions
+                display: none
+                top: 84px
+                +mq(medium)
+                    top: 220px
+                    width: 63px
+                    height: 60px
+            &--inbound
+                display: none
+                top: 32%
+                +mq(medium)
+                    top: 210px
+                    width: 48px
+                    height: 60px
+            &--displayBlock
+                display: block
+            &--displayNone
+                display: none
             +mq(xsmall)
-                top: 260px
+                top: 75%
                 left: 80%
             +mq(xxxsmall)
                 top: 80%
