@@ -24,6 +24,34 @@ $(".menu__nav-list-item div").on("click", function () {
   );
 });
 
+//scroller
+$(".wrapper__scroller-up-icon").on("click", function () {
+  $("body, html").animate(
+    {
+      scrollTop: $(".wrapper").offset().top,
+    },
+    500
+  );
+});
+
+//expand answer for question
+let questions = document.querySelectorAll(".faq__question");
+
+for (let i = 0; i < questions.length; i++) {
+  console.log(questions[i]);
+
+  questions[i].addEventListener("click", popUp, false);
+}
+
+function popUp() {
+  let answer = this.querySelector(".faq__question-answer");
+  let plus = this.querySelector(".faq__question-icon");
+  let xmark = this.querySelector(".faq__question-xmark");
+  answer.classList.toggle("faq__question-answer--displayBlock");
+  plus.classList.toggle("faq__question-icon--displayNone");
+  xmark.classList.toggle("faq__question-xmark--displayBlock");
+}
+
 //select in pricing section
 
 const control = document.querySelector(".pricing__interactive-type--control");
@@ -136,28 +164,4 @@ inbound.addEventListener("click", function () {
   }
 });
 
-//expand answer for question
-let questions = document.querySelectorAll(".faq__question");
 
-for (let i = 0; i < questions.length; i++) {
-  questions[i].addEventListener("click", popUp, false);
-}
-
-function popUp() {
-  let answer = this.querySelector(".faq__question-answer");
-  let plus = this.querySelector(".faq__question-icon");
-  let xmark = this.querySelector(".faq__question-xmark");
-  answer.classList.toggle("faq__question-answer--displayBlock");
-  plus.classList.toggle("faq__question-icon--displayNone");
-  xmark.classList.toggle("faq__question-xmark--displayBlock");
-}
-
-//scroller
-$(".wrapper__scroller-up").on("click", function () {
-  $("body, html").animate(
-    {
-      scrollTop: $(".wrapper").offset().top,
-    },
-    500
-  );
-});
