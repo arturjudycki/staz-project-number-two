@@ -92,6 +92,9 @@ html {
           box-shadow: 4px 4px 0 #FFC700;
   cursor: pointer;
 }
+.wrapper__scroller-up:hover {
+  background-color: #FFD700;
+}
 @media (max-width: 580px) {
   .wrapper__scroller-up {
     display: block;
@@ -122,6 +125,7 @@ html {
 .menu__burger {
   display: none;
   font-size: 3rem;
+  cursor: pointer;
 }
 @media (max-width: 1048px) {
   .menu__burger {
@@ -134,6 +138,7 @@ html {
 .menu__xmark {
   display: none;
   font-size: 3rem;
+  cursor: pointer;
 }
 @media (max-width: 1048px) {
   .menu__xmark--displayBlock {
@@ -183,6 +188,8 @@ html {
 .menu__nav-list-item {
   margin-right: 22px;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .menu__nav-list-item:hover {
   color: #666;
@@ -197,6 +204,8 @@ html {
     padding: 10px 0;
     margin: 0 0 30px 0;
     margin-right: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   .menu__nav-list-item--vertical:hover {
     background-color: #FFC700;
@@ -244,12 +253,16 @@ html {
   background-color: transparent;
   border: 2px solid #FFC700;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .menu__account-btn:hover {
   background-color: #FFC700;
 }
 .menu__account-btn--bgcYellow {
   background-color: #FFC700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .menu__account-btn--bgcYellow:hover {
   background-color: #fff;
@@ -380,6 +393,11 @@ html {
   border: 4px solid #000;
   padding: 15px 0;
   text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.section-main__article-subtitle:hover {
+  background-color: #FFD700;
 }
 @media (max-width: 1048px) {
   .section-main__article-subtitle {
@@ -645,6 +663,8 @@ html {
           box-shadow: 12px 12px 0 #FFC700;
   background-color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .pricing__interactive-type--control {
   background-color: #FFC700;
@@ -938,6 +958,11 @@ html {
   background-color: #FFC700;
   border: 4px solid #000;
   padding: 22px 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.pricing__container-subtitle:hover {
+  background-color: #FFD700;
 }
 @media (max-width: 580px) {
   .pricing__container-subtitle {
@@ -955,6 +980,11 @@ html {
   border: 4px solid #000;
   padding: 20px 10px;
   margin: 56px 0 0 31px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.pricing__container-info-text:hover {
+  background-color: #eee;
 }
 @media (max-width: 580px) {
   .pricing__container-info-text {
@@ -1012,6 +1042,8 @@ html {
   padding: 20px 0;
   margin-bottom: 16px;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 @media (max-width: 580px) {
   .faq__question {
@@ -1085,6 +1117,11 @@ html {
 }
 .faq__info-link {
   color: #000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.faq__info-link:hover {
+  color: #666;
 }
 
 .contact__title {
@@ -1184,6 +1221,8 @@ html {
   margin: 10px 0 0 auto;
   font-size: 2.7rem;
   font-weight: 900;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 @media (max-width: 580px) {
   .contact__form-element--btn {
@@ -1283,6 +1322,8 @@ html {
   background-color: #000;
   color: #FFC700;
   border-color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .footer .menu__account-btn--bgcBlack:hover {
   background-color: #FFC700;
@@ -1290,6 +1331,8 @@ html {
 }
 .footer .menu__account-btn--borderBlack {
   border-color: #000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .footer .menu__account-btn--borderBlack:hover {
   background-color: #FFD700;
@@ -1314,6 +1357,8 @@ html {
 .footer .menu__social-media-icon {
   font-size: 22px;
   color: #FFC700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 @media (max-width: 860px) {
   .footer .menu__social-media-icon {
@@ -1321,7 +1366,7 @@ html {
   }
 }
 .footer .menu__social-media-icon:hover {
-  color: #FFD700;
+  color: rgba(255, 179, 0, 0.9960784314);
 }
 @media (max-width: 860px) {
   .footer .menu__social-media-icon:hover {

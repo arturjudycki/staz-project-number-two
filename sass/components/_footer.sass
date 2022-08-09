@@ -45,11 +45,13 @@
                     background-color: #000
                     color: $main-color
                     border-color: #000
+                    transition: 0.3s
                     &:hover
                         background-color: $main-color
                         color: #000
                 &--borderBlack
                     border-color: #000
+                    transition: 0.2s
                     &:hover
                         background-color: $hover-color
         &__social-media
@@ -65,10 +67,11 @@
             &-icon
                 font-size: 22px
                 color: $main-color
+                transition: 0.2s
                 +mq(xmediumx)
                     color: #000
                 &:hover
-                    color: $hover-color
+                    color: #ffb300fe
                     +mq(xmediumx)
                         color: #666
     &__text-info

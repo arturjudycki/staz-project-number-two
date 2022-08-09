@@ -10,6 +10,7 @@
     &__burger
         display: none
         font-size: 3rem
+        cursor: pointer
         +mq(large)
             display: block
         &--displayNone
@@ -17,6 +18,7 @@
     &__xmark
         display: none
         font-size: 3rem
+        cursor: pointer
         &--displayBlock
             +mq(large)
                 display: block
@@ -43,6 +45,7 @@
         &-item
             margin-right: 22px
             cursor: pointer
+            transition: 0.2s
             &:hover
                 color: #666
             &--vertical
@@ -54,11 +57,12 @@
                     padding: 10px 0
                     margin: 0 0 30px 0
                     margin-right: 0
+                    transition: 0.2s
                     &:hover
                         background-color: $main-color
                         color: #000
                     >div
-                        width:100%
+                        width: 100%
                         display: flex
                         justify-content: center
     &__account
@@ -81,10 +85,12 @@
             background-color: transparent
             border: 2px solid $main-color
             cursor: pointer
+            transition: 0.2s
             &:hover
                 background-color: $main-color
             &--bgcYellow
                 background-color: $main-color
+                transition: 0.2s
                 &:hover
                     background-color: #fff
             &--vertical
