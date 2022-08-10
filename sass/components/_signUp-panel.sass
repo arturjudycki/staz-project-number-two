@@ -1,5 +1,6 @@
 .signUp-panel
     text-align: center
+    margin-bottom: 200px
     &__title
         font-size: 4rem
         font-weight: 800
@@ -8,10 +9,86 @@
         font-size: 1.6rem
         margin-bottom: 50px
     &__form
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-container
+            max-width: 1048px
+            display: flex
+            flex-wrap: wrap
         &-name
+            font-size: 1.6rem
+            font-weight: 500
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            &--marginRight
+                margin-right: 25px
         &-item
-        &-checkbox-text
-            &--color
+            width: 492px
+            font-size: 1.6rem
+            font-weight: 500
+            padding: 20px 0 20px 30px
+            margin: 10px 20px 20px 0
+            background-color: #fff
+            border: 4px solid #000
+            box-shadow: 6px 6px 0 $main-color
+            &--colorGray
+                color: #C7C7C7
+            &--addArrow
+                appearance: none
+                background-color: transparent
+                background: url('../img/arrow-down.png') no-repeat
+                background-position: 95% 50%
+            &::placeholder
+                color: #C7C7C7
+                opacity: 1
+            &:-ms-input-placeholder
+                color: #C7C7C7
+            &::-ms-input-placeholder
+                color: #C7C7C7
+        &-recaptcha
+            margin: 60px 0 20px
+        &-checkbox
+            &-text
+                font-size: 1.8rem
+                transition: 0.2s
+                &--color
+                    color: $main-color
+                    &:hover
+                        color: $hover-color
+            &-item
+                appearance: none
+                border: 3px solid #000
+                width: 2.2rem
+                height: 2.2rem
+                transition-duration: 0.3s
+                background-color: #fff
+                cursor: pointer
+                &:checked::after
+                    content: '\2713'
+                    display: block
+                    text-align: center
+                    color: #fff
+                    transition-duration: 0.3s
+                    background-color: #000
+                    cursor: pointer
         &-btn
+            font-size: 2.7rem
+            font-weight: 500
+            width: 615px
+            background-color: $main-color
+            border: 4px solid #000
+            padding: 10px 0
+            margin: 75px 0 15px
+            cursor: pointer
+            transition: 0.2s
+            &:hover
+                background-color: $hover-color
     &__login-link
+        font-size: 1.8rem
         &--color
+            color: $main-color
+            transition: 0.2s
+            &:hover
+                color: $hover-color
