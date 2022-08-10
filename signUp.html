@@ -6,10 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN UP - Rightfully</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
-    <p>Strona w budowie. Niedokładnie przejrzałem Figmę.</p>
+    <div class="wrapper">
+        <section class="baner">
+            <a href="index.html" class="baner__logo-link">
+                <img src="./img/logo.png" alt="logo" class="baner__logo-image">
+            </a>
+        </section>
+        <h1>STRONA W BUDOWIE. NIEDOKŁADNIE PRZEJRZAŁEM FIGMĘ.</h1>
+        <section class="signUp-panel">
+            <h1 class="signUp-panel__title">Sign Up</h1>
+            <p class="signUp-panel__text">You're just a few steps away from getting back what's rightfully yours.</p>
+            <form class="signUp-panel__form">
+                <label for="first-name" class="signUp-panel__form-name">First name
+                    <input type="text" id="first-name" placeholder="First name" class="signUp-panel__form-item">
+                </label>
+                <label for="last-name" class="signUp-panel__form-name">Last name
+                    <input type="text" id="last-name" placeholder="Last name" class="signUp-panel__form-item">
+                </label>
+                <label for="amazon" class="signUp-panel__form-name">Amazon storefront name
+                    <input type="text" id="amazon" placeholder="Amazon storefront name" class="signUp-panel__form-item">
+                </label>
+                <label for="marketplace" class="signUp-panel__form-name">Primary Marketplace
+                    <select id="marketplace" class="signUp-panel__form-item">
+                        <option value="Primary Marketplace">Primary Marketplace</option>
+                    </select>
+                </label>
+                <label for="email" class="signUp-panel__form-name">Email address
+                    <input type="email" id="email" placeholder="Email address" class="signUp-panel__form-item">
+                </label>
+                <label for="password" class="signUp-panel__form-name">Password
+                    <input type="password" id="password" placeholder="Password" class="signUp-panel__form-item">
+                </label>
+                <label for="password-conf" class="signUp-panel__form-name">Password confirmation
+                    <input type="password" id="password-conf" placeholder="Password confirmation"
+                        class="signUp-panel__form-item">
+                </label>
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <label for="terms" class="signUp-panel__form-checkbox-text">
+                    <input type="checkbox" id="terms" class="signUp-panel__form-item">
+                    I have read and agree to the <a href=""
+                        class="signUp-panel__form-checkbox-text signUp-panel__form-checkbox-text--color">Terms of
+                        Service</a>
+                </label>
+                <button class="signUp-panel__form-btn">Create an account</button>
+            </form>
+            <p class="signUp-panel__login-link">Already have an account?
+                <a href="login.html" class="signUp-panel__login-link signUp-panel__login-link--color">Log in</a>
+            </p>
+    
+        </section>
+    
+    </div>
 </body>
 
 </html>
+<!-- <i class="fa-solid fa-angle-down"></i> -->
